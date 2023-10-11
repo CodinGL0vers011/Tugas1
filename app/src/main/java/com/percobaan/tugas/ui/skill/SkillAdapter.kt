@@ -3,14 +3,14 @@ package com.percobaan.tugas.ui.skill
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.percobaan.tugas.databinding.ItemSkillBinding
+import com.percobaan.tugas.databinding.FragmentSkillItemBinding
 
 class SkillsAdapter(val listener: (string: String) -> Unit) : RecyclerView.Adapter<SkillsAdapter.ViewHolder>() {
 
-    inner class ViewHolder(private val binding: ItemSkillBinding) :
+    inner class ViewHolder(private val binding: FragmentSkillItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(text: String) {
-            binding.tvName.text = text
+            binding.itemContent.text = text
             binding.root.setOnClickListener {
                 listener(text)
             }
@@ -39,7 +39,7 @@ class SkillsAdapter(val listener: (string: String) -> Unit) : RecyclerView.Adapt
         parent: ViewGroup,
         viewType: Int
     ): ViewHolder {
-        val view = ItemSkillBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val view = FragmentSkillItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(view)
     }
 

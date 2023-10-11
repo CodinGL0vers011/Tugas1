@@ -4,10 +4,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SkillViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is skill Fragment"
+class SkillViewModel  : ViewModel(){
+    private val _texts = MutableLiveData<List<String>>().apply {
+        value = (1..10).mapIndexed { _, i ->
+            "Skill # $i"
+        }
     }
-    val text: LiveData<String> = _text
+
+    val texts: LiveData<List<String>> = _texts
 }

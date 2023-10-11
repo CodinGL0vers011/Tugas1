@@ -7,4 +7,7 @@
     <string name="title_skill">Skill</string>
     <string name="skill">Skill</string>
     <string name="title_skill_detail">Skill</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
 </resources>

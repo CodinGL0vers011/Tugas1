@@ -1,5 +1,6 @@
 package com.percobaan.tugas.ui.skill
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -27,12 +28,12 @@ class SkillDetailFragment: Fragment() {
 
         return binding.root
     }
-
+@SuppressLint("SetText")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     if (arguments != null){
         val name = arguments?.getString(EXTRA_NAME)
-        binding.tvSkill.text = name
+        binding.tvSkill.text = "Ini adalah bahasa pemograman"+" "+name
     }
     }
     override fun onDestroyView() {

@@ -17,13 +17,13 @@
         android:title="@string/title_notifications" />
 
     <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/baseline_supervised_user_circle_24"
-        android:title="@string/title_profile" />
-
-    <item
         android:id="@+id/navigation_skill"
         android:icon="@drawable/baseline_design_services_24"
         android:title="@string/title_skill" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_supervised_user_circle_24"
+        android:title="@string/title_profile" />
 
 </menu>
